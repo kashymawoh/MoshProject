@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Booust Zoo Arena</title>
+
+</head>
+
+<style>
+body, html {
+    height: 80%;
+    margin: 0;
+}
+.hero-back {
+  background: greenyellow;
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color:blue;
+}
+.hero-text button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 20px 45px;
+  color: black;
+  background-color: #ddd;
+  text-align: center;
+  cursor: pointer;
+}
+.hero-text button:hover {
+  background-color:  #000000;
+  color: red;
+}
+</style>
+</head>
+
+<script type="text/javascript">
+function choose(){
+    var animals =["dog", "bat", "goat"]
+    animalName = prompt ("ENTER ANIMAL NAME")
+if(animals.includes(animalName.toLowerCase())){
+  alert ("Animal currently exist"); }
+
+else{alert("ANIMAL DOES NOT EXIST");
+}
+ } 
+</script>
+<body>
+    <div class="hero-back">
+  <div class="hero-text">
+    <h1 style="font-size:50px">Hello World</h1>
+    <button onclick="choose()">Browse your favourite animal</button>
+  </div>
+</div>
+</body>
+</html>
